@@ -12,3 +12,8 @@
 
 - [x] 3.1 Explain when the manual workflow is appropriate and when a full subscription-based setup is still preferable.
 - [x] 3.2 Identify next-step opportunities, such as multi-node examples or automation built on top of the documented baseline.
+
+## 4. Interleave reasoning with the learning flow
+
+- [x] 4.1 Update the learning document so key sections include the reasoning behind the manual path, not just the final steps.
+- [x] 4.2 Explain in the document how the manual workflow helped isolate whether the problem lived in the node, subconverter usage, client import, or proxy activation path.

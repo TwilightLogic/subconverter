@@ -8,6 +8,7 @@ We manually converted a single `ss://` share link into a working ClashX/Clash Me
 - Capture the specific lessons learned during our fork-based exploration, including why a raw `ss://` link is not the same as a Clash subscription.
 - Define validation guidance for confirming that a node is loaded, selected, and actually used as the active proxy.
 - Document the limits of the manual approach so future work can build on it, such as multi-node generation or automated conversion.
+- Interleave the learning document with the reasoning that led to each step so the page reads as a guided troubleshooting notebook rather than only a final recipe.
 
 ## Capabilities
 
@@ -18,4 +19,4 @@ We manually converted a single `ss://` share link into a working ClashX/Clash Me
 
 ## Impact
 
-Affected areas are the OpenSpec change artifacts for this fork, plus future contributor onboarding for manual subscription conversion work. There are no code, API, or dependency changes in this proposal.
+Affected areas are the OpenSpec change artifacts for this fork, the project-local learning document, and future contributor onboarding for manual subscription conversion work. There are no code, API, or dependency changes in this proposal.

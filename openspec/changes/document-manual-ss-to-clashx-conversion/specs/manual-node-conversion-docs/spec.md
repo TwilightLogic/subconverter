@@ -32,3 +32,11 @@ The project SHALL explain where the manual single-node workflow is useful and wh
 - **WHEN** a reader asks whether the manual YAML setup is equivalent to configuring a full airport subscription
 - **THEN** the documentation MUST explain that the manual approach configures individual nodes successfully
 - **THEN** the documentation MUST explain that automatic node updates, multi-node rotation, and subscription maintenance remain out of scope for this workflow
+
+### Requirement: Preserve reasoning alongside the steps
+The project SHALL present the manual workflow with the reasoning that motivated the major decisions and checks, not only with final instructions.
+
+#### Scenario: Reader wants to understand why the manual path existed
+- **WHEN** a reader follows the learning document from top to bottom
+- **THEN** the document MUST explain why manual conversion was useful as a debugging and learning path even though automatic conversion exists in the project
+- **THEN** the document MUST connect key steps to the uncertainty they resolve, such as separating node parsing issues from client import or proxy activation issues

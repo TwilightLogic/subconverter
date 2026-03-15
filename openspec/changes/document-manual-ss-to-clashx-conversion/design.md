@@ -11,6 +11,7 @@ The change is documentation-only, but it still benefits from design decisions be
 - Explain the minimum ClashX/Clash Meta YAML structure required for a working manual import.
 - Capture the debugging checkpoints that distinguish "node parses" from "traffic is actually proxied".
 - Make the document specific to what we learned in this fork so future automation work has a reliable baseline.
+- Preserve the thinking path behind the workflow so readers can understand why each step exists and when to stop using the manual path.
 
 **Non-Goals:**
 - Implement automatic conversion inside the application.
@@ -36,6 +37,12 @@ The spec will require the document to explain at least the following failure mod
 
 Alternative considered:
 - Only document the final working YAML. Rejected because the hard part of the exercise was diagnosis, not syntax.
+
+### Blend procedure with reasoning instead of splitting them into separate documents
+The learning page will keep the operational steps and the accompanying thought process close together. Readers should see not only what to do next, but also what uncertainty that step is resolving.
+
+Alternative considered:
+- Write one strict how-to guide and a separate retrospective note. Rejected because the split would make the diagnostic reasoning easier to miss and less useful during actual troubleshooting.
 
 ## Risks / Trade-offs
 
