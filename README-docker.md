@@ -30,6 +30,24 @@ curl -F "data=@newpref.ini" http://localhost:25500/updateconf?type=form\&token=p
 # you may want to change this token in your configuration file
 ```
 
+If the Docker container cannot resolve or fetch a subscription URL directly, but
+your host machine can, you can fetch the subscription on the host and pass it to
+subconverter as a `data:` URL:
+
+```bash
+# prints a local subconverter URL you can import into Clash/Clash Meta
+python3 scripts/host_fetch_sub.py 'https://example.com/subscription'
+
+# or fetch and write the converted Clash config immediately
+python3 scripts/host_fetch_sub.py \
+  --fetch-output \
+  --output profile.yaml \
+  'https://example.com/subscription'
+```
+
+This helper keeps the remote fetch on the host, which can work around Docker DNS
+issues without changing the main converter logic.
+
 For those who want to use their own `pref` configuration and/or rules, snippets, profiles:
 ```txt
 # you can save the files you want to replace to a folder, then copy it into to the docker
